@@ -1,0 +1,43 @@
+{
+  "name": "beacon",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "apps/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "autobase/**",
+      "**/autobase/**",
+      "corestore/**",
+      "**/corestore/**",
+      "hypercore/**",
+      "**/hypercore/**",
+      "hyperswarm/**",
+      "**/hyperswarm/**",
+      "hyperbee/**",
+      "**/hyperbee/**"
+    ]
+  },
+  "license": "MIT",
+  "scripts": {
+    "turbo": "turbo",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "android:metro": "yarn workspace @beacon/mobile start",
+    "android:start": "yarn workspace @beacon/mobile android",
+    "android:studio": "yarn workspace @beacon/mobile studio",
+    "ios:metro": "yarn workspace @beacon/mobile start",
+    "ios:start": "yarn workspace @beacon/mobile ios",
+    "ios:xcode": "yarn workspace @beacon/mobile xcode"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "prettier": "latest"
+  }
+}

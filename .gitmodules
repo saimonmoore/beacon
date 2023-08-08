@@ -1,0 +1,3 @@
+[submodule "packages/autobase-manager"]
+	path = packages/autobase-manager
+	url = git@github.com:lejeunerenard/autobase-manager.git
