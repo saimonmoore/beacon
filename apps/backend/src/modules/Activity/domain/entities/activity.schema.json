@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://beacon.org/activity.schema.json",
+  "type": "object",
+  "default": {},
+  "title": "Beacon Activity Schema",
+  "required": [
+    "description",
+    "clothesDescription",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "description": {
+      "type": "string",
+      "default": "",
+      "title": "The description Schema",
+      "examples": [
+        "Walk up to ibon Baticielles"
+      ]
+    },
+    "clothesDescription": {
+      "type": "string",
+      "default": "",
+      "title": "The clothesDescription Schema",
+      "examples": [
+        "Wearing yellow t-shirt with a blue smily on it"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "default": "",
+      "title": "The createdAt Schema",
+      "examples": [
+        "2023-03-26T07:09:37.765Z"
+      ]
+    },
+    "updatedAt": {
+      "type": "string",
+      "default": "",
+      "title": "The updatedAt Schema",
+      "examples": [
+        "2023-03-26T07:09:37.765Z"
+      ]
+    }
+  },
+  "examples": [
+    {
+      "description": "Walk up to ibon Escarpinosa",
+      "clothesDescription": "Wearing yellow t-shirt with a blue smily on it",
+      "createdAt": "2023-03-26T07:09:37.765Z",
+      "updatedAt": "2023-03-26T07:09:37.765Z"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://beacon.org/notificationTemplate.schema.json",
+  "type": "object",
+  "default": {},
+  "title": "Beacon NotificationTemplate Schema",
+  "required": [
+    "text",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "text": {
+      "type": "string",
+      "default": "",
+      "title": "The text Schema",
+      "examples": [
+        "${displayName} has not been heard from for ${delta} hours"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "default": "",
+      "title": "The createdAt Schema",
+      "examples": [
+        "2023-03-26T07:09:37.765Z"
+      ]
+    },
+    "updatedAt": {
+      "type": "string",
+      "default": "",
+      "title": "The updatedAt Schema",
+      "examples": [
+        "2023-03-26T07:09:37.765Z"
+      ]
+    }
+  },
+  "examples": [
+    {
+      "text": "${displayName} has not been heard from for ${delta} hours",
+      "createdAt": "2023-03-26T07:09:37.765Z",
+      "updatedAt": "2023-03-26T07:09:37.765Z"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://beacon.org/route.schema.json",
+  "type": "object",
+  "default": {},
+  "title": "Beacon Route Schema",
+  "required": [
+    "url",
+    "description",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "url": {
+      "type": "string",
+      "default": "",
+      "title": "The url Schema",
+      "examples": [
+        "https://upload.wikimedia.org/wikipedia/commons/b/b6/Simon_Moore_2014.jpg"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "default": "",
+      "title": "The description Schema",
+      "examples": [
+        "Wikiloc: Route to ibon Escarpinosa"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "default": "",
+      "title": "The createdAt Schema",
+      "examples": [
+        "2023-03-26T07:09:37.765Z"
+      ]
+    },
+    "updatedAt": {
+      "type": "string",
+      "default": "",
+      "title": "The updatedAt Schema",
+      "examples": [
+        "2023-03-26T07:09:37.765Z"
+      ]
+    }
+  },
+  "examples": [
+    {
+      "description": "Wikiloc: Route to ibon Escarpinosa",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Simon_Moore_2014.jpg",
+      "createdAt": "2023-03-26T07:09:37.765Z",
+      "updatedAt": "2023-03-26T07:09:37.765Z"
+    }
+  ]
+}

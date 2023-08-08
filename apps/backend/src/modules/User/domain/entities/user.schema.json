@@ -5,34 +5,46 @@
   "default": {},
   "title": "Beacon User Schema",
   "required": [
-    "publicKey",
-    "displayName",
-    "avatar",
+    "hash",
     "email",
+    "password",
+    "firstName",
+    "lastName",
+    "dateOfBirth",
+    "sex",
+    "profilePictureUrl",
     "createdAt",
     "updatedAt"
   ],
   "properties": {
-    "publicKey": {
+    "hash": {
       "type": "string",
       "default": "",
-      "title": "The publicKey Schema",
+      "title": "The hash Schema",
       "examples": [
         "103283b30db86e1fffd19ffa327d3dc98f079cb6a606f4c5c9c98ee14b405566"
       ]
     },
-    "displayName": {
+    "firstName": {
       "type": "string",
       "default": "",
-      "title": "The displayName Schema",
+      "title": "The firstName Schema",
       "examples": [
-        "Simon Moore"
+        "Simon"
       ]
     },
-    "avatar": {
+    "lastName": {
       "type": "string",
       "default": "",
-      "title": "The avatar Schema",
+      "title": "The lastName Schema",
+      "examples": [
+        "Moore"
+      ]
+    },
+    "profilePictureUrl": {
+      "type": "string",
+      "default": "",
+      "title": "The profilePictureUrl Schema",
       "examples": [
         "https://upload.wikimedia.org/wikipedia/commons/b/b6/Simon_Moore_2014.jpg"
       ]
@@ -43,6 +55,30 @@
       "title": "The email Schema",
       "examples": [
         "simon.moore@beacon.org"
+      ]
+    },
+    "password": {
+      "type": "string",
+      "default": "",
+      "title": "The password Schema",
+      "examples": [
+        "secret"
+      ]
+    },
+    "sex": {
+      "type": "string",
+      "default": "",
+      "title": "The sex Schema",
+      "examples": [
+        "m"
+      ]
+    },
+    "dateOfBirth": {
+      "type": "string",
+      "default": "",
+      "title": "The dateOfBirth Schema",
+      "examples": [
+        "2023-03-26"
       ]
     },
     "createdAt": {
@@ -64,10 +100,14 @@
   },
   "examples": [
     {
-      "publicKey": "103283b30db86e1fffd19ffa327d3dc98f079cb6a606f4c5c9c98ee14b405566",
-      "displayName": "Simon Moore",
-      "avatar": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Simon_Moore_2014.jpg",
+      "hash": "103283b30db86e1fffd19ffa327d3dc98f079cb6a606f4c5c9c98ee14b405566",
       "email": "simon.moore@beacon.org",
+      "password": "secret",
+      "firstName": "Simon",
+      "lastName": "Moore",
+      "sex": "m",
+      "dateOfBirth": "2023-03-26",
+      "profilePictureUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Simon_Moore_2014.jpg",
       "createdAt": "2023-03-26T07:09:37.765Z",
       "updatedAt": "2023-03-26T07:09:37.765Z"
     }

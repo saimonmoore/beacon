@@ -10,14 +10,35 @@
       "#config/*": [
         "./config/*"
       ],
-      "#Analysis/*": [
-        "./modules/Analysis/*"
+      "#Activity/*": [
+        "./modules/Activity/*"
       ],
-      "#Record/*": [
-        "./modules/Record/*"
+      "#Beacon/*": [
+        "./modules/Beacon/*"
+      ],
+      "#Contact/*": [
+        "./modules/Contact/*"
+      ],
+      "#Location/*": [
+        "./modules/Location/*"
+      ],
+      "#NotificationMethod/*": [
+        "./modules/NotificationMethod/*"
+      ],
+      "#NotificationRule/*": [
+        "./modules/NotificationRule/*"
+      ],
+      "#NotificationTemplate/*": [
+        "./modules/NotificationTemplate/*"
+      ],
+      "#Route/*": [
+        "./modules/Route/*"
       ],
       "#Session/*": [
         "./modules/Session/*"
+      ],
+      "#Settings/*": [
+        "./modules/Settings/*"
       ],
       "#Shared/*": [
         "./modules/Shared/*"

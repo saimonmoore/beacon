@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://beacon.org/notificationRule.schema.json",
+  "type": "object",
+  "default": {},
+  "title": "Beacon NotificationRule Schema",
+  "required": [
+    "userId",
+    "order",
+    "timeDelay",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "userId": {
+      "type": "string",
+      "default": "",
+      "title": "The userId Schema",
+      "examples": [
+        "103283b30db86e1fffd19ffa327d3dc98f079cb6a606f4c5c9c98ee14b405566"
+      ]
+    },
+    "order": {
+      "type": "number",
+      "default": "",
+      "title": "The order Schema",
+      "examples": [
+        0
+      ]
+    },
+    "timeDelay": {
+      "type": "number",
+      "default": "",
+      "title": "The timeDelay Schema",
+      "examples": [
+        5
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "default": "",
+      "title": "The createdAt Schema",
+      "examples": [
+        "2023-03-26T07:09:37.765Z"
+      ]
+    },
+    "updatedAt": {
+      "type": "string",
+      "default": "",
+      "title": "The updatedAt Schema",
+      "examples": [
+        "2023-03-26T07:09:37.765Z"
+      ]
+    }
+  },
+  "examples": [
+    {
+      "userId": "103283b30db86e1fffd19ffa327d3dc98f079cb6a606f4c5c9c98ee14b405566",
+      "order": 0,
+      "timeDelay": 5,
+      "createdAt": "2023-03-26T07:09:37.765Z",
+      "updatedAt": "2023-03-26T07:09:37.765Z"
+    }
+  ]
+}

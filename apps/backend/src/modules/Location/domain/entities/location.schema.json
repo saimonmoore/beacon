@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://beacon.org/location.schema.json",
+  "type": "object",
+  "default": {},
+  "title": "Beacon Location Schema",
+  "required": [
+     "latitude",
+     "longitude",
+     "area",
+     "region",
+     "countryCode",
+     "createdAt",
+     "updatedAt"
+  ],
+  "properties": {
+    "latitude": {
+      "type": "number",
+      "default": "",
+      "title": "The latitude Schema",
+      "examples": [
+         101.24
+      ]
+    },
+    "longitude": {
+      "type": "number",
+      "default": "",
+      "title": "The longitude Schema",
+      "examples": [
+         101.24
+      ]
+    },
+    "area": {
+      "type": "string",
+      "default": "",
+      "title": "The area Schema",
+      "examples": [
+        "Benasque"
+      ]
+    },
+    "region": {
+      "type": "string",
+      "default": "",
+      "title": "The region Schema",
+      "examples": [
+        "Posets y Maladeta"
+      ]
+    },
+    "countryCode": {
+      "type": "string",
+      "default": "",
+      "title": "The countryCode Schema",
+      "examples": [
+        "ES"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "default": "",
+      "title": "The createdAt Schema",
+      "examples": [
+        "2023-03-26T07:09:37.765Z"
+      ]
+    },
+    "updatedAt": {
+      "type": "string",
+      "default": "",
+      "title": "The updatedAt Schema",
+      "examples": [
+        "2023-03-26T07:09:37.765Z"
+      ]
+    }
+  },
+  "examples": [
+    {
+     "latitude": 101.23,
+     "longitude": 101.23,
+     "area": "Benasque",
+     "region": "Posets y Maladeta",
+     "countryCode": "ES",
+      "createdAt": "2023-03-26T07:09:37.765Z",
+      "updatedAt": "2023-03-26T07:09:37.765Z"
+    }
+  ]
+}

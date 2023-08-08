@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://beacon.org/notificationMethod.schema.json",
+  "type": "object",
+  "default": {},
+  "title": "Beacon NotificationMethod Schema",
+  "required": [
+    "email",
+    "phone"
+  ],
+  "properties": {
+    "email": {
+      "type": "string",
+      "default": "",
+      "title": "The email Schema",
+      "examples": [
+        "simon.moore@beacon.org"
+      ]
+    },
+    "phone": {
+      "type": "string",
+      "default": "",
+      "title": "The phone Schema",
+      "examples": [
+        "9312345678"
+      ]
+    }
+  },
+  "examples": [
+    {
+      "email": "simon.moore@beacon.org",
+      "phone": "9312345678"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://beacon.org/settings.schema.json",
+  "type": "object",
+  "default": {},
+  "title": "Beacon Settings Schema",
+  "required": [
+    "userId",
+    "contacts"
+  ],
+  "properties": {
+    "userId": {
+      "type": "string",
+      "default": "",
+      "title": "The userId Schema",
+      "examples": [
+        "103283b30db86e1fffd19ffa327d3dc98f079cb6a606f4c5c9c98ee14b405566"
+      ]
+    },
+    "contacts": {
+      "type": "array",
+      "default": "",
+      "title": "The contacts Schema",
+      "examples": [
+        []
+      ]
+    }
+  },
+  "examples": [
+    {
+      "userId": "103283b30db86e1fffd19ffa327d3dc98f079cb6a606f4c5c9c98ee14b405566",
+      "contacts": []
+    }
+  ]
+}
