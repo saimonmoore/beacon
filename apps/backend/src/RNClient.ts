@@ -62,7 +62,7 @@ function Session(props: ClientProps) {
 
 export async function RNClient(props: { channel: any; userDataPath: string }) {
   const { channel, userDataPath } = props;
-  const backend = new Beacon(false, userDataPath, true);
+  const backend = new BeaconCore(false, userDataPath, true);
   await backend.start();
 
   channel.on('message', async (msg: any) => {
