@@ -24,3 +24,5 @@ https://github.com/holepunchto/seedbee
 https://github.com/holepunchto/repl-swarm
 https://github.com/Telios-org
 
+https://github.com/peers/peerjs (direct p2p connection to peers via webrtc)
+
